@@ -1,0 +1,4 @@
+configuration:
+  db:
+    name: DB URL
+    description: A `postgres://` database URL to connect to

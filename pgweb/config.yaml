@@ -1,0 +1,22 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: pgweb
+version: "0.1.0"
+slug: pgweb
+description: pgweb
+url: "https://github.com/bjeanes/hassio-addons/tree/main/pgweb"
+arch:
+  # - armhf
+  # - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+webui: http://[HOST]:[PORT:8081]
+ingress: true
+ingress_port: 8081
+stage: experimental
+options:
+  db: "postgresql://postgres:homeassistant@77b2833f-timescaledb/homeassistant"
+schema:
+  db: "url"
+# image: "ghcr.io/home-assistant/{arch}-addon-example"

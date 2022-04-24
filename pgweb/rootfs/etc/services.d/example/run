@@ -11,6 +11,7 @@ declare db_url
 
 ## Get the 'message' key from the user config options.
 db_url=$(bashio::config 'db')
+bashio::log.debug "Database URL: $db_url"
 
 ## Run your program
 exec pgweb --url "$db_url" --no-ssh --skip-open --bind 0.0.0.0

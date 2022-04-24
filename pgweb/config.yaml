@@ -18,4 +18,4 @@ options:
   db: "postgresql://postgres:homeassistant@77b2833f-timescaledb/homeassistant"
 schema:
   db: "url"
-# image: "ghcr.io/home-assistant/{arch}-addon-example"
+image: "ghcr.io/bjeanes/hassio-addon-pgweb-{arch}"

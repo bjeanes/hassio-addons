@@ -15,7 +15,7 @@ ingress: true
 ingress_port: 8081
 stage: experimental
 options:
-  db: "postgresql://postgres:homeassistant@77b2833f-timescaledb/homeassistant"
+  db: "postgresql://postgres:homeassistant@77b2833f-timescaledb/homeassistant?sslmode=disable"
 schema:
   db: "url"
 image: "ghcr.io/bjeanes/hassio-addon-pgweb-{arch}"

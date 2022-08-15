@@ -13,6 +13,7 @@ arch:
 init: false
 ingress: true
 ingress_port: 8081
+panel_icon: mdi:database-edit-outline
 stage: experimental
 options:
   db: "postgresql://postgres:homeassistant@77b2833f-timescaledb/homeassistant?sslmode=disable"
